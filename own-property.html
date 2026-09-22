@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Own a Property - HAND OF GOD CONSTRUCTION COMPANY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script src="nav.js"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 via-white to-gray-50 font-[Plus Jakarta Sans]">
+
+    <!-- Navbar -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-8x2 mx-auto px-8 sm:px-10 lg:px-12 h-26 flex items-center justify-between">
+            <div class="flex items-center group">
+                <a href="index.html" class="block transform transition duration-300">
+                    <img src="images/logo-optimized.png" alt="HAND OF GOD CONSTRUCTION COMPANY LIMITEDLogo" class="h-26 sm:h-28 w-auto object-contain" width="1940" height="528">
+                </a>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+                <a href="index.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Home</a>
+                <a href="estates.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Our Estates</a>
+                <a href="own-property.html" class="text-[#143D2A] font-bold relative pb-1 flex items-center gap-2">
+                    <span>Own a Property</span>
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#C29B38] animate-pulse"></span>
+                </a>
+                <a href="facilities.html#infrastructure" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Facilities</a>
+                <a href="about-us.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">About Us</a>
+                <a href="news.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">News & Media</a>
+                <a href="contact.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Contact</a>
+            </nav>
+
+            <!-- CTA Button & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <a href="index.html#subscribe" class="hidden sm:inline-block bg-[#C29B38] hover:bg-[#b08b30] text-white px-6 py-2.5 rounded-full text-sm font-bold transition shadow-lg hover:shadow-xl duration-300 relative overflow-hidden group">
+                    <span class="relative z-10">Book Inspection</span>
+                    <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition duration-500"></span>
+                </a>
+                <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none p-2 hover:bg-gray-100 rounded-lg transition duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Home</a>
+            <a href="estates.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Our Estates</a>
+            <a href="own-property.html" class="block text-[#143D2A] font-bold py-1 transition duration-300">Own a Property</a>
+            <a href="facilities.html#infrastructure" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Facilities</a>
+            <a href="about-us.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">About Us</a>
+            <a href="news.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">News & Media</a>
+            <a href="contact.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Contact</a>
+            <div class="pt-2">
+                <a href="index.html#subscribe" class="block text-center bg-[#C29B38] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#b08b30] transition duration-300 shadow-lg">Book Inspection</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center py-16 sm:py-24 lg:py-32 overflow-hidden" style="background-image: url('images/DSC_3451-optimized.jpg');">
+        <div class="absolute inset-0 bg-[#143D2A]/85"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8 relative z-10">
+                    <div class="space-y-4">
+                        <span class="inline-block px-4 py-2 bg-[#C29B38]/10 text-[#C29B38] text-xs font-bold uppercase tracking-wider rounded-full border border-[#C29B38]/20">
+                            Secure Your Dream Property
+                        </span>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-white leading-tight">
+                            Own Your <span class="bg-gradient-to-r from-[#C29B38] via-white to-[#C29B38] bg-clip-text text-transparent">Perfect Home</span>
+                        </h1>
+                        <p class="text-lg text-gray-200 leading-relaxed">
+                            Start your journey to property ownership today. We provide flexible payment plans, transparent processes, and world-class support every step of the way.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="application.html" class="px-8 py-4 bg-gradient-to-r from-[#143D2A] to-[#0f2e20] hover:shadow-lg text-white font-semibold rounded-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2">
+                            <span>Start Application</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                        <a href="portfolio.html" class="px-8 py-4 bg-[#C29B38] hover:bg-[#b08b30] text-white font-semibold rounded-xl transition-all duration-300 shadow-md text-center">
+                            View Gallery &amp; Portfolio
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-4">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-[#C29B38] font-serif">500+</div>
+                            <p class="text-xs text-gray-200 font-medium">Happy Owners</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-[#C29B38] font-serif">12+</div>
+                            <p class="text-xs text-gray-200 font-medium">Estates</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                            <div class="text-2xl font-bold text-[#C29B38] font-serif">100%</div>
+                            <p class="text-xs text-gray-200 font-medium">Transparent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual -->
+                <div class="relative">
+                    <div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-4 border-[#143D2A]">
+                        <img src="images/WhatsApp Image 2026-08-17 at 12.09.24 PM (3).jpeg" alt="Property showcase" class="w-full h-full aspect-square object-cover" width="1000" height="670" fetchpriority="high">
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 w-40 h-40 bg-[#C29B38]/20 rounded-full blur-3xl"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-[#C29B38]/10 text-[#143D2A] text-xs font-bold uppercase tracking-wider rounded-full border border-[#C29B38]/20 mb-4">
+                    Simple Process
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-serif font-bold text-[#143D2A] mb-4">
+                    Your Journey to Ownership
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    We've streamlined the property acquisition process to make it easy, transparent, and hassle-free.
+                </p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 h-full">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#143D2A] to-[#0f2e20] rounded-xl text-white text-2xl font-bold font-serif mb-6">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Browse Properties</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Explore our diverse portfolio of estates and find the property that matches your dreams and budget.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-[#C29B38] text-3xl">→</div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 h-full">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#143D2A] to-[#0f2e20] rounded-xl text-white text-2xl font-bold font-serif mb-6">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Submit Application</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Complete a simple application form with your basic information and property preferences.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-[#C29B38] text-3xl">→</div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 h-full">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#143D2A] to-[#0f2e20] rounded-xl text-white text-2xl font-bold font-serif mb-6">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Documentation & Verification</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Submit required documents. Our team verifies and processes everything transparently.
+                        </p>
+                    </div>
+                    <div class="hidden lg:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-[#C29B38] text-3xl">→</div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="relative">
+                    <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 h-full">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#143D2A] to-[#0f2e20] rounded-xl text-white text-2xl font-bold font-serif mb-6">
+                            4
+                        </div>
+                        <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Close & Move In</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Sign documents, complete payment arrangement, and receive keys to your new property.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Plans Section -->
+    <section class="py-16 sm:py-24 bg-gradient-to-br from-[#143D2A]/5 via-white to-[#C29B38]/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-[#C29B38]/10 text-[#143D2A] text-xs font-bold uppercase tracking-wider rounded-full border border-[#C29B38]/20 mb-4">
+                    Flexible Options
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-serif font-bold text-[#143D2A] mb-4">
+                    Payment Plans for Everyone
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Choose a payment structure that works best for your financial situation.
+                </p>
+            </div>
+
+            <!-- Payment Plans Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plan 1: Cash Payment -->
+                <div class="bg-white rounded-2xl border-2 border-gray-100 p-8 shadow-sm hover:border-[#143D2A] hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-[#143D2A] font-serif">Full Payment</h3>
+                        <span class="text-3xl">💰</span>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-sm text-gray-600 mb-2">Best for those who can pay in full</p>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Immediate ownership transfer</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">No interest charges</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Minimal documentation</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Exclusive discounts available</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full py-3 bg-[#143D2A] hover:bg-[#0f2e20] text-white font-semibold rounded-lg transition">
+                        Learn More
+                    </button>
+                </div>
+
+                <!-- Plan 2: Flexible Installments -->
+                <div class="bg-white rounded-2xl border-2 border-[#C29B38] p-8 shadow-lg relative">
+                    <div class="absolute -top-4 -right-4 bg-[#C29B38] text-white px-4 py-1 rounded-full text-xs font-bold">
+                        MOST POPULAR
+                    </div>
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-[#143D2A] font-serif">Installment Plan</h3>
+                        <span class="text-3xl">📅</span>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-sm text-gray-600 mb-2">Spread payments over convenient periods</p>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Up to 24 months payment plan</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Flexible payment schedules</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Competitive interest rates</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Easy approval process</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="application.html" class="w-full py-3 bg-[#C29B38] hover:bg-[#a68730] text-white font-semibold rounded-lg transition text-center block">
+                        Apply Now
+                    </a>
+                </div>
+
+                <!-- Plan 3: Mortgage/NHF -->
+                <div class="bg-white rounded-2xl border-2 border-gray-100 p-8 shadow-sm hover:border-[#143D2A] hover:shadow-lg transition-all duration-300">
+                    <div class="flex items-center justify-between mb-6">
+                        <h3 class="text-2xl font-bold text-[#143D2A] font-serif">Mortgage</h3>
+                        <span class="text-3xl">🏦</span>
+                    </div>
+                    <div class="mb-6">
+                        <p class="text-sm text-gray-600 mb-2">Bank financing & NHF approved</p>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">NHF contribution eligible</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Bank mortgage approved</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Simplified bank documentation</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-[#C29B38]">✓</span>
+                                <span class="text-gray-700">Dedicated support team</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="w-full py-3 bg-[#143D2A] hover:bg-[#0f2e20] text-white font-semibold rounded-lg transition">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-[#C29B38]/10 text-[#143D2A] text-xs font-bold uppercase tracking-wider rounded-full border border-[#C29B38]/20 mb-4">
+                    What You Need
+                </span>
+                <h2 class="text-4xl sm:text-5xl font-serif font-bold text-[#143D2A] mb-4">
+                    Documentation & Requirements
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Simple, straightforward requirements to get you started on your property ownership journey.
+                </p>
+            </div>
+
+            <!-- Requirements Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Personal Requirements -->
+                <div class="bg-gradient-to-br from-white to-gray-50/50 rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-[#143D2A]/10 rounded-lg flex items-center justify-center text-2xl">👤</div>
+                        <h3 class="text-2xl font-bold text-[#143D2A] font-serif">Personal Documents</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Valid Government ID</p>
+                                <p class="text-sm text-gray-600">National ID, Driver's License, or Passport</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Proof of Residence</p>
+                                <p class="text-sm text-gray-600">Recent utility bill or letter from landlord</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Proof of Income</p>
+                                <p class="text-sm text-gray-600">Recent pay slips or bank statements (3 months)</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">NHF Contribution Status (if applicable)</p>
+                                <p class="text-sm text-gray-600">NHF balance or contribution history</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Financial Requirements -->
+                <div class="bg-gradient-to-br from-white to-gray-50/50 rounded-2xl border border-gray-100 p-8 shadow-sm hover:shadow-md transition">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-[#143D2A]/10 rounded-lg flex items-center justify-center text-2xl">💳</div>
+                        <h3 class="text-2xl font-bold text-[#143D2A] font-serif">Financial Documents</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Bank Statements</p>
+                                <p class="text-sm text-gray-600">Last 3-6 months to verify financial stability</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Tax Returns</p>
+                                <p class="text-sm text-gray-600">Last year's tax declaration (if self-employed)</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Employment Letter</p>
+                                <p class="text-sm text-gray-600">From your current employer confirming position</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-3">
+                            <span class="text-[#C29B38] font-bold flex-shrink-0">☑</span>
+                            <div>
+                                <p class="font-semibold text-gray-900">Deposit/Initial Payment</p>
+                                <p class="text-sm text-gray-600">As per your chosen payment plan</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional Info -->
+            <div class="mt-12 bg-gradient-to-r from-[#143D2A]/5 to-[#C29B38]/5 rounded-2xl border border-[#143D2A]/10 p-8">
+                <div class="flex gap-4">
+                    <div class="text-3xl flex-shrink-0">ℹ️</div>
+                    <div>
+                        <h4 class="font-bold text-[#143D2A] mb-2">Need Assistance?</h4>
+                        <p class="text-gray-700 mb-4">Don't worry if you're unsure about any requirements. Our dedicated team is here to guide you through the entire process. We'll explain each requirement and help you gather the necessary documents.</p>
+                        <button class="text-[#143D2A] font-semibold hover:text-[#C29B38] transition">
+                            Schedule Consultation →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-serif font-bold text-[#143D2A] mb-4">
+                    Why Choose Us
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    Discover what makes us the preferred choice for property ownership in Nigeria.
+                </p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-[#143D2A] hover:shadow-lg transition group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">🔒</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-2">100% Secure</h3>
+                    <p class="text-gray-600 text-sm">All transactions are fully secured with proper documentation and legal backing.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-[#143D2A] hover:shadow-lg transition group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">⚡</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-2">Fast Processing</h3>
+                    <p class="text-gray-600 text-sm">Quick approval and processing, typically completed within 30 days.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-[#143D2A] hover:shadow-lg transition group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">💰</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-2">Flexible Payment</h3>
+                    <p class="text-gray-600 text-sm">Multiple payment options designed to fit your budget and financial goals.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-[#143D2A] hover:shadow-lg transition group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">👨‍⚖️</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-2">Legal Support</h3>
+                    <p class="text-gray-600 text-sm">Professional legal team handles all documentation and compliance requirements.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-[#143D2A] hover:shadow-lg transition group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">🏆</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-2">Proven Track Record</h3>
+                    <p class="text-gray-600 text-sm">Over 500+ satisfied property owners trust us with their real estate needs.</p>
+                </div>
+
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-[#143D2A] hover:shadow-lg transition group">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">📱</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-2">24/7 Support</h3>
+                    <p class="text-gray-600 text-sm">Dedicated customer support available around the clock to assist you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative bg-cover bg-center py-16 sm:py-24 overflow-hidden" style="background-image: url('images/DSC_3451-optimized.jpg');">
+        <div class="absolute inset-0 bg-[#143D2A]/85"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-4xl sm:text-5xl font-serif font-bold text-white mb-6">
+                Ready to Own Your Dream Property?
+            </h2>
+            <p class="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
+                Start your journey today with a simple application. Our team is ready to guide you every step of the way.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="application.html" class="px-10 py-4 bg-[#C29B38] hover:bg-[#a68730] text-[#143D2A] font-bold text-lg rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl text-center">
+                    Start Application
+                </a>
+                <button class="px-10 py-4 bg-white/20 hover:bg-white/30 border-2 border-white text-white font-bold text-lg rounded-xl transition-all duration-300 backdrop-blur-sm">
+                    Schedule Call
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-serif font-bold text-[#143D2A] mb-4">
+                    Get in Touch
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Have questions? Our team is ready to help you.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Phone -->
+                <div class="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Call Us</h3>
+                    <p class="text-gray-600 mb-4">Speak with our team directly</p>
+                    <a href="tel:08025000067" class="text-[#143D2A] font-bold text-lg hover:text-[#C29B38] transition">
+                        08025000067
+                    </a>
+                </div>
+
+                <!-- Email -->
+                <div class="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">✉️</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Email Us</h3>
+                    <p class="text-gray-600 mb-4">We respond within 24 hours</p>
+                    <a href="mailto:info@handofgodconstruction.com" class="text-[#143D2A] font-bold text-lg hover:text-[#C29B38] transition break-all">
+                        info@hog.ng
+                    </a>
+                </div>
+
+                <!-- Visit -->
+                <div class="bg-white rounded-2xl border border-gray-100 p-8 text-center hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">📍</div>
+                    <h3 class="text-xl font-bold text-[#143D2A] font-serif mb-3">Visit Us</h3>
+                    <p class="text-gray-600 mb-4">Office hours: Mon - Fri, 9AM - 5PM</p>
+                    <p class="text-[#143D2A] font-bold">
+                        Enugu, Nigeria
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#143D2A] text-white py-12 border-t border-[#0f2e20]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <div class="w-10 h-10 bg-[#C29B38] rounded-lg flex items-center justify-center">
+                            <span class="font-bold font-serif">HG</span>
+                        </div>
+                        <span class="font-bold font-serif">HAND OF GOD CONSTRUCTION COMPANY</span>
+                    </div>
+                    <p class="text-white/70 text-sm">Building dreams, one property at a time.</p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-white/70">
+                        <li><a href="index.html" class="hover:text-[#C29B38] transition">Home</a></li>
+                        <li><a href="estates.html" class="hover:text-[#C29B38] transition">Our Estates</a></li>
+                        <li><a href="own-property.html" class="hover:text-[#C29B38] transition">Own a Property</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-white/70">
+                        <li><a href="#contact" class="hover:text-[#C29B38] transition">Contact Us</a></li>
+                        <li><a href="contact.html" class="hover:text-[#C29B38] transition">FAQ &amp; Support</a></li>
+                        <li><a href="nhf-requirements.html" class="hover:text-[#C29B38] transition">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="https://handofgodestate.com/" aria-label="HAND OF GOD CONSTRUCTION COMPANY LIMITEDwebsite" class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center hover:bg-[#C29B38] transition text-sm">HG</a>
+                        <a href="mailto:customerservice@handofgodestate.com" aria-label="Email customer service" class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center hover:bg-[#C29B38] transition text-sm">@</a>
+                        <a href="tel:08025000067" aria-label="Call customer service" class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center hover:bg-[#C29B38] transition text-sm">Tel</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8">
+                <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-white/70">
+                    <p>&copy; 2026 HAND OF GOD CONSTRUCTION COMPANY. All rights reserved.</p>
+                    <div class="flex gap-6 mt-4 sm:mt-0">
+                        <a href="contact.html" class="hover:text-[#C29B38] transition">Privacy &amp; Terms</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

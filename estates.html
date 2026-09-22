@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Estates - HAND OF GOD CONSTRUCTION COMPANY</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css.css">
+    <script src="nav.js"></script>
+</head>
+<body class="text-gray-900 antialiased">
+
+    <!-- Navbar -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-8x2 mx-auto px-8 sm:px-10 lg:px-12 h-26 flex items-center justify-between">
+            <div class="flex items-center group">
+                <a href="index.html" class="block transform transition duration-300">
+                    <img src="images/logo-optimized.png" alt="HAND OF GOD CONSTRUCTION COMPANY LIMITEDLogo" class="h-26 sm:h-28 w-auto object-contain" width="1940" height="528">
+                </a>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-700">
+                <a href="index.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Home</a>
+                <a href="estates.html" class="text-[#143D2A] font-bold relative pb-1 flex items-center gap-2">
+                    <span>Our Estates</span>
+                    <span class="inline-block w-2 h-2 rounded-full bg-[#C29B38] animate-pulse"></span>
+                </a>
+                <a href="own-property.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Own a Property</a>
+                <a href="facilities.html#infrastructure" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Facilities</a>
+                <a href="about-us.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">About Us</a>
+                <a href="contact.html" class="hover:text-[#143D2A] transition duration-300 relative pb-1">Contact</a>
+            </nav>
+
+            <!-- CTA Button & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <a href="index.html#subscribe" class="hidden sm:inline-block bg-[#C29B38] hover:bg-[#b08b30] text-white px-6 py-2.5 rounded-full text-sm font-bold transition shadow-lg hover:shadow-xl duration-300 relative overflow-hidden group">
+                    <span class="relative z-10">Book Inspection</span>
+                    <span class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition duration-500"></span>
+                </a>
+                <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none p-2 hover:bg-gray-100 rounded-lg transition duration-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Home</a>
+            <a href="estates.html" class="block text-[#143D2A] font-bold py-1 transition duration-300">Our Estates</a>
+            <a href="own-property.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Own a Property</a>
+            <a href="facilities.html#infrastructure" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Facilities</a>
+            <a href="about-us.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">About Us</a>
+            <a href="contact.html" class="block text-gray-700 hover:text-[#143D2A] font-medium py-1 transition duration-300">Contact</a>
+            <div class="pt-2">
+                <a href="index.html#subscribe" class="block text-center bg-[#C29B38] text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#b08b30] transition duration-300 shadow-lg">Book Inspection</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center text-white py-20 px-4 sm:px-6 lg:px-8" style="background-image: url('images/DSC_3451-optimized.jpg');">
+        <div class="absolute inset-0 bg-[#143D2A]/85"></div>
+        <div class="relative max-w-7xl mx-auto text-center z-10">
+            <span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase block mb-3">Premium Living Spaces</span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold mb-4">Our Premium Estates</h1>
+            <p class="text-gray-200 text-base sm:text-lg max-w-2xl mx-auto font-light">
+                Discover master-planned communities built with uncompromising standards across Nigeria. Each estate is crafted to provide comfort, security, and sustainable living.
+            </p>
+        </div>
+    </section>
+
+    <!-- Estates Grid Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="estates-directory-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <a href="winners-estate.html" class="block w-full h-full"><img loading="lazy" src="images/8dac5ffe-ef0d-40d3-9fb9-54480c246b52.jpg" alt="Winners Estate" class="w-full h-full object-cover"></a>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full mb-3">Not Available</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">Winners Estate</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Enugu / Multi-location</p>
+                        <p class="text-xs text-gray-500">Status: not available</p>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">A premium residential estate offering thoughtfully planned homes and plots with a strong focus on security, good roads, and long-term value.</p>
+                    <a href="winners-estate.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <a href="city-of-david-estate.html" class="block w-full h-full"><img loading="lazy" src="images/06872ea7-452d-4eed-a8a9-cefd6be388f8.jpg" alt="City of David Estate" class="w-full h-full object-cover"></a>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full mb-3">On Going</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">City of David</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Enugu State</p>
+                        <p class="text-xs text-gray-500">Status: on going</p>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">A serene and well-planned estate designed for comfortable family living and future appreciation in one of Enugu’s strategic residential areas.</p>
+                    <a href="city-of-david-estate.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <a href="new-jerusalem-city-estate.html" class="block w-full h-full"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.25 PM (1).jpeg" alt="New Jerusalem City Estate" class="w-full h-full object-cover"></a>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Coming Soon</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">New Jerusalem</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Enugu / Owerri</p>
+                        <p class="text-xs text-gray-500">Status: coming soon</p>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">A fast-maturing residential concept centered on lifestyle, convenience, and strong community value for homeowners and investors.</p>
+                    <a href="new-jerusalem-city-estate.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <img loading="lazy" src="images/Pics for Dav/WhatsApp Image 2025-08-11 at 11.12.30_26d8ba68.jpg" alt="Eastern Mega City" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Development Stage</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">Eastern Mega City</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Eastern zone network</p>
+                        <p class="text-xs text-gray-500">Status: development stage</p>
+                    </div>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                        <li><strong class="text-[#143D2A]">1.</strong> Eastern Mega City Abakaliki — soon to launch</li>
+                        <li><strong class="text-[#143D2A]">2.</strong> Eastern Mega City Awka — development stage</li>
+                        <li><strong class="text-[#143D2A]">3.</strong> Eastern Mega City Umuahia — development stage</li>
+                        <li><strong class="text-[#143D2A]">4.</strong> Eastern Mega City Owerri — development stage</li>
+                    </ul>
+                    <a href="eastern-mega-city.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">Explore Locations</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <a href="city-of-light-estate.html" class="block w-full h-full"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.25 PM (3).jpeg" alt="City of Light Estate" class="w-full h-full object-cover"></a>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Coming Soon</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">City of Light</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Asaba, Delta State</p>
+                        <p class="text-xs text-gray-500">Status: coming soon</p>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">A standalone estate within the wider Eastern Mega City vision, positioned in Asaba and tailored for growing demand outside the eastern corridor.</p>
+                    <a href="city-of-light-estate.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <a href="new-haven-estate.html" class="block w-full h-full"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.24 PM.jpeg" alt="New Haven Estate" class="w-full h-full object-cover"></a>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-red-100 text-red-700 text-xs font-bold px-3 py-1 rounded-full mb-3">Not Available</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">New Haven Estate</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Enugu State</p>
+                        <p class="text-xs text-gray-500">Status: not available</p>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">A promising estate concept positioned for future residential growth with strong long-term appeal.</p>
+                    <a href="new-haven-estate.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">View Details</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-300">
+                <div class="h-56 bg-gray-50 flex items-center justify-center relative overflow-hidden">
+                    <a href="paradise-estate.html" class="block w-full h-full"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.25 PM.jpeg" alt="Paradise Estate Emene" class="w-full h-full object-cover"></a>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <span class="inline-block bg-orange-100 text-orange-800 text-xs font-bold px-3 py-1 rounded-full mb-3">Coming Soon</span>
+                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">Paradise Estate Emene</h3>
+                        <p class="text-sm text-gray-600 font-semibold mb-2">📍 Emene, Enugu</p>
+                        <p class="text-xs text-gray-500">Status: coming soon</p>
+                    </div>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Designed around modern home ownership with affordable luxury appeal, practical layouts, and convenient access to urban amenities.</p>
+                    <a href="paradise-estate.html" class="block w-full mt-4 bg-[#143D2A] hover:bg-[#0f2e20] text-white text-center py-2.5 rounded-lg text-sm font-semibold transition">View Details</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-[#143D2A] text-white py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold mb-4">Ready to Own Your Dream Home?</h2>
+            <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+                Contact our expert team today to schedule an inspection or discuss flexible payment options tailored to your needs.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                    <div class="text-3xl mb-2">📞</div>
+                    <p class="text-sm text-gray-300">Call Us</p>
+                    <p class="font-bold">08025000067</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                    <div class="text-3xl mb-2">✉️</div>
+                    <p class="text-sm text-gray-300">Email Us</p>
+                    <p class="font-bold text-sm">handofgodconstruction@gmail.com</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6">
+                    <div class="text-3xl mb-2">📍</div>
+                    <p class="text-sm text-gray-300">Visit Us</p>
+                    <p class="font-bold text-sm">Enugu, Nigeria</p>
+                </div>
+            </div>
+            <a href="index.html" class="inline-block mt-8 bg-[#C29B38] hover:bg-[#b08b30] text-white px-8 py-3 rounded-full font-bold transition">Back to Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2024 HAND OF GOD CONSTRUCTION COMPANY. All rights reserved.</p>
+            <p class="text-xs mt-2">Building Dreams, Creating Legacies</p>
+        </div>
+    </footer>
+
+</body>
+</html>

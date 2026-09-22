@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo-optimized.png">
+    <title>Admin Dashboard - HAND OF GOD CONSTRUCTION COMPANY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <style>
+        .admin-page { font-family: 'Montserrat', sans-serif; background: #f4f6f1; color: #17231d; }
+        .admin-page > div > main > header { visibility: visible !important; }
+        .admin-page h1, .admin-page h2, .admin-page h3 { font-family: 'Montserrat', sans-serif; }
+        .admin-sidebar { background: #082a1d; }
+        .admin-sidebar a.active { background: #c29b38; color: #082a1d; }
+        .admin-card { background: #fff; border: 1px solid rgba(18, 63, 45, .1); }
+        .status-pill { border-radius: 999px; padding: 5px 10px; font-size: 11px; font-weight: 700; }
+        .status-New { color: #8a5d00; background: #fff4cf; }
+        .status-Contacted { color: #135c48; background: #dff5e9; }
+        .status-Closed { color: #56635d; background: #e9eeea; }
+        .admin-table th { color: #718078; font-size: 10px; letter-spacing: .12em; text-transform: uppercase; }
+        .admin-table td, .admin-table th { padding: 15px 18px; text-align: left; }
+        .admin-table tbody tr { border-top: 1px solid #edf0ed; }
+        .admin-table tbody tr:hover { background: #fafbf8; }
+        .detail-drawer { transition: transform .25s ease; }
+        @media (max-width: 767px) { .admin-sidebar { min-height: auto; } .admin-table { min-width: 760px; } }
+    </style>
+</head>
+<body class="admin-page min-h-screen">
+    <div class="min-h-screen md:flex">
+        <aside class="admin-sidebar w-full md:w-64 md:min-h-screen text-white p-5 md:p-6">
+            <a href="index.html" class="flex items-center gap-3 mb-8">
+                <img src="images/logo-optimized.png" alt="HAND OF GOD CONSTRUCTION COMPANY" class="w-40 h-auto brightness-0 invert">
+            </a>
+            <div class="mb-8 px-3">
+                <p class="text-[10px] uppercase tracking-[.2em] text-[#c29b38] font-bold">Workspace</p>
+                <p class="text-sm text-white/70 mt-1">Operations overview</p>
+            </div>
+            <nav class="grid grid-cols-2 md:grid-cols-1 gap-2 text-sm" aria-label="Admin navigation">
+                <a href="#overview" class="active rounded-lg px-3 py-3 font-semibold">Overview</a>
+                <a href="#applications" class="rounded-lg px-3 py-3 text-white/70 hover:bg-white/10 hover:text-white">Applications</a>
+                <a href="index.html" class="rounded-lg px-3 py-3 text-white/70 hover:bg-white/10 hover:text-white">View website</a>
+            </nav>
+            <div class="hidden md:block mt-auto pt-32 px-3 text-xs text-white/50">Protected workspace<br>Data is stored securely</div>
+        </aside>
+
+        <main class="flex-1 min-w-0" id="overview">
+            <header class="bg-white border-b border-[#e4e9e3] px-5 py-5 sm:px-8 flex items-center justify-between gap-4">
+                <div><p class="text-xs uppercase tracking-[.18em] text-[#c29b38] font-bold">Admin console</p><h1 class="text-2xl sm:text-3xl font-bold text-[#123f2d] mt-1">Good morning, Admin</h1></div>
+                <div class="flex items-center gap-2"><button id="add-demo" type="button" class="border border-[#123f2d] text-[#123f2d] hover:bg-[#123f2d] hover:text-white rounded-lg px-3 py-2 text-xs font-bold">Add demo enquiry</button><button id="logout-btn" type="button" class="rounded-lg bg-[#123f2d] text-white px-3 py-2 text-xs font-bold hover:bg-[#082a1d]">Sign out</button></div>
+            </header>
+
+            <div class="p-5 sm:p-8 max-w-[1500px] mx-auto">
+                <div class="grid grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                    <div class="admin-card rounded-xl p-5"><p class="text-xs text-[#718078]">Total applications</p><p id="total-count" class="text-3xl font-bold text-[#123f2d] mt-2">0</p><p class="text-xs text-[#718078] mt-2">All time enquiries</p></div>
+                    <div class="admin-card rounded-xl p-5"><p class="text-xs text-[#718078]">New enquiries</p><p id="new-count" class="text-3xl font-bold text-[#c29b38] mt-2">0</p><p class="text-xs text-[#718078] mt-2">Awaiting first response</p></div>
+                    <div class="admin-card rounded-xl p-5"><p class="text-xs text-[#718078]">Contacted</p><p id="contacted-count" class="text-3xl font-bold text-[#123f2d] mt-2">0</p><p class="text-xs text-[#718078] mt-2">In active follow-up</p></div>
+                    <div class="admin-card rounded-xl p-5"><p class="text-xs text-[#718078]">Top estate</p><p id="top-estate" class="text-lg font-bold text-[#123f2d] mt-3 truncate">No data yet</p><p class="text-xs text-[#718078] mt-2">Most requested</p></div>
+                </div>
+
+                <section id="applications" class="admin-card rounded-xl overflow-hidden">
+                    <div class="p-5 sm:p-6 border-b border-[#edf0ed] flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                        <div><h2 class="text-xl font-bold text-[#123f2d]">Property applications</h2><p class="text-sm text-[#718078] mt-1">Review and manage incoming customer requests.</p></div>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <label class="relative"><span class="sr-only">Search applications</span><input id="search-input" type="search" placeholder="Search name, estate, email" class="w-full sm:w-64 rounded-lg border border-[#dce4dc] px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#c29b38]"></label>
+                            <select id="status-filter" class="rounded-lg border border-[#dce4dc] px-3 py-2 text-sm bg-white focus:outline-none"><option value="all">All statuses</option><option>New</option><option>Contacted</option><option>Closed</option></select>
+                            <button id="export-btn" type="button" class="rounded-lg bg-[#123f2d] text-white px-4 py-2 text-sm font-bold hover:bg-[#082a1d]">Export CSV</button>
+                        </div>
+                    </div>
+                    <div class="overflow-x-auto"><table class="admin-table w-full"><thead><tr><th>Applicant</th><th>Estate</th><th>Property</th><th>Submitted</th><th>Status</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody id="application-rows"></tbody></table></div>
+                    <div id="empty-state" class="hidden text-center py-16 px-6"><p class="text-lg font-bold text-[#123f2d]">No applications found</p><p class="text-sm text-[#718078] mt-2">New website enquiries will appear here automatically.</p></div>
+                </section>
+
+                <section id="blog" class="admin-card rounded-xl overflow-hidden mt-8">
+                    <div class="p-5 sm:p-6 border-b border-[#edf0ed]"><h2 class="text-xl font-bold text-[#123f2d]">Blog posts</h2><p class="text-sm text-[#718078] mt-1">Write, save, and publish company news.</p></div>
+                    <form id="post-form" class="p-5 sm:p-6 grid lg:grid-cols-2 gap-4">
+                        <input type="hidden" id="post-id">
+                        <div><label for="post-title" class="block text-xs uppercase tracking-widest text-[#718078] font-bold mb-2">Title</label><input id="post-title" required class="w-full rounded-lg border border-[#dce4dc] px-3 py-3" placeholder="Post title"></div>
+                        <div><label for="post-category" class="block text-xs uppercase tracking-widest text-[#718078] font-bold mb-2">Category</label><input id="post-category" class="w-full rounded-lg border border-[#dce4dc] px-3 py-3" value="News" placeholder="News, Estates, Company"></div>
+                        <div><label for="post-image" class="block text-xs uppercase tracking-widest text-[#718078] font-bold mb-2">Featured image URL</label><input id="post-image" type="url" class="w-full rounded-lg border border-[#dce4dc] px-3 py-3" placeholder="images/NEWS & MEDIA.jpg"></div>
+                        <div><label for="post-excerpt" class="block text-xs uppercase tracking-widest text-[#718078] font-bold mb-2">Short excerpt</label><input id="post-excerpt" class="w-full rounded-lg border border-[#dce4dc] px-3 py-3" placeholder="A short summary for the news page"></div>
+                        <div class="lg:col-span-2"><label for="post-content" class="block text-xs uppercase tracking-widest text-[#718078] font-bold mb-2">Article content</label><textarea id="post-content" required rows="7" class="w-full rounded-lg border border-[#dce4dc] px-3 py-3" placeholder="Write the full article here..."></textarea></div>
+                        <div class="lg:col-span-2 flex flex-wrap items-center gap-3"><select id="post-status" class="rounded-lg border border-[#dce4dc] px-3 py-3 bg-white"><option>Draft</option><option>Published</option></select><button class="rounded-lg bg-[#c29b38] text-white px-5 py-3 font-bold" type="submit">Save post</button><button id="post-clear" class="rounded-lg border border-[#dce4dc] px-5 py-3 font-bold text-[#123f2d]" type="button">Clear</button><span id="post-message" class="text-sm text-[#718078]" role="status"></span></div>
+                    </form>
+                    <div class="overflow-x-auto"><table class="admin-table w-full"><thead><tr><th>Title</th><th>Category</th><th>Status</th><th>Updated</th><th>Actions</th></tr></thead><tbody id="post-rows"></tbody></table></div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <div id="detail-modal" class="hidden fixed inset-0 z-50 bg-[#082a1d]/60 p-4 flex items-center justify-center" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+        <div class="detail-drawer bg-white rounded-xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+            <div class="flex justify-between items-start gap-4"><div><p id="detail-id" class="text-xs uppercase tracking-widest text-[#c29b38] font-bold"></p><h2 id="detail-title" class="text-2xl font-bold text-[#123f2d] mt-2"></h2></div><button id="close-detail" class="text-2xl text-[#718078] hover:text-[#123f2d]" aria-label="Close details">&times;</button></div>
+            <div id="detail-content" class="grid sm:grid-cols-2 gap-5 mt-8 text-sm"></div>
+            <div class="mt-6"><label for="detail-status" class="block text-xs uppercase tracking-widest text-[#718078] font-bold mb-2">Update status</label><select id="detail-status" class="w-full border border-[#dce4dc] rounded-lg px-3 py-3 bg-white"></select></div>
+            <div class="flex justify-end gap-3 mt-8"><button id="delete-detail" type="button" class="mr-auto text-sm font-bold text-red-700 hover:text-red-900">Delete</button><button id="save-detail" type="button" class="rounded-lg bg-[#c29b38] text-white px-5 py-3 text-sm font-bold hover:bg-[#a9822d]">Save changes</button></div>
+        </div>
+    </div>
+
+    <script>
+        const storageKey = 'hogApplications';
+        const apiMode = window.location.protocol !== 'file:';
+        const statuses = ['New', 'Contacted', 'Closed'];
+        let applications = [];
+        let selectedId = null;
+        const byId = id => document.getElementById(id);
+        const escapeHtml = value => String(value || '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
+        const save = () => localStorage.setItem(storageKey, JSON.stringify(applications));
+        const formatDate = value => value ? new Intl.DateTimeFormat('en-NG', { day: 'numeric', month: 'short', year: 'numeric' }).format(new Date(value)) : '-';
+        let posts = [];
+
+        async function loadApplications() {
+            if (!apiMode) applications = JSON.parse(localStorage.getItem(storageKey) || '[]');
+            else {
+                const response = await fetch('/api/applications');
+                if (response.status === 401) { window.location.href = '/admin-login.html'; return; }
+                applications = await response.json();
+            }
+            render();
+        }
+
+        async function loadPosts() {
+            if (!apiMode) return;
+            const response = await fetch('/api/admin/posts');
+            if (response.ok) { posts = await response.json(); renderPosts(); }
+        }
+        function renderPosts() { byId('post-rows').innerHTML = posts.map(post => `<tr><td><strong class="text-[#123f2d]">${escapeHtml(post.title)}</strong></td><td>${escapeHtml(post.category)}</td><td><span class="status-pill ${post.status === 'Published' ? 'status-Contacted' : 'status-New'}">${escapeHtml(post.status)}</span></td><td>${formatDate(post.updatedAt)}</td><td><button data-edit-post="${escapeHtml(post.id)}" class="text-xs font-bold text-[#123f2d] mr-3">Edit</button><button data-delete-post="${escapeHtml(post.id)}" class="text-xs font-bold text-red-700">Delete</button></td></tr>`).join(''); }
+        function clearPostForm() { byId('post-form').reset(); byId('post-id').value = ''; byId('post-category').value = 'News'; byId('post-status').value = 'Draft'; }
+
+        function render() {
+            const query = byId('search-input').value.toLowerCase().trim();
+            const filter = byId('status-filter').value;
+            const visible = applications.filter(item => {
+                const searchable = `${item.name} ${item.email} ${item.estate} ${item.id}`.toLowerCase();
+                return (!query || searchable.includes(query)) && (filter === 'all' || item.status === filter);
+            });
+            byId('total-count').textContent = applications.length;
+            byId('new-count').textContent = applications.filter(item => item.status === 'New').length;
+            byId('contacted-count').textContent = applications.filter(item => item.status === 'Contacted').length;
+            const estates = applications.reduce((result, item) => { result[item.estate] = (result[item.estate] || 0) + 1; return result; }, {});
+            const topEstate = Object.entries(estates).sort((a, b) => b[1] - a[1])[0];
+            byId('top-estate').textContent = topEstate ? topEstate[0] : 'No data yet';
+            byId('application-rows').innerHTML = visible.map(item => `<tr><td><button data-open="${escapeHtml(item.id)}" class="text-left"><strong class="block text-[#123f2d]">${escapeHtml(item.name)}</strong><span class="text-xs text-[#718078]">${escapeHtml(item.email)}</span></button></td><td>${escapeHtml(item.estate)}</td><td>${escapeHtml(item.propertyType || '-')}</td><td>${formatDate(item.submittedAt)}</td><td><span class="status-pill status-${escapeHtml(item.status)}">${escapeHtml(item.status)}</span></td><td><button data-open="${escapeHtml(item.id)}" class="text-xs font-bold text-[#123f2d] hover:text-[#c29b38]">View</button></td></tr>`).join('');
+            byId('empty-state').classList.toggle('hidden', visible.length > 0);
+        }
+
+        function openDetails(id) {
+            const item = applications.find(application => application.id === id); if (!item) return;
+            selectedId = id; byId('detail-id').textContent = item.id; byId('detail-title').textContent = item.name;
+            byId('detail-content').innerHTML = [['Email', item.email], ['Phone', item.phone], ['Estate', item.estate], ['Property type', item.propertyType], ['Payment plan', item.paymentPlan], ['Submitted', formatDate(item.submittedAt)], ['Notes', item.notes || 'No notes provided']].map(([label, value]) => `<div class="${label === 'Notes' ? 'sm:col-span-2' : ''}"><p class="text-[10px] uppercase tracking-widest text-[#718078] font-bold">${label}</p><p class="text-[#17231d] mt-1 break-words">${escapeHtml(value)}</p></div>`).join('');
+            byId('detail-status').innerHTML = statuses.map(status => `<option ${status === item.status ? 'selected' : ''}>${status}</option>`).join(''); byId('detail-modal').classList.remove('hidden');
+        }
+        function closeDetails() { byId('detail-modal').classList.add('hidden'); selectedId = null; }
+        document.addEventListener('click', event => { const button = event.target.closest('[data-open]'); if (button) openDetails(button.dataset.open); });
+        document.addEventListener('click', async event => { const edit = event.target.closest('[data-edit-post]'); const remove = event.target.closest('[data-delete-post]'); if (edit) { const post = posts.find(item => item.id === edit.dataset.editPost); if (post) { byId('post-id').value = post.id; byId('post-title').value = post.title; byId('post-category').value = post.category; byId('post-image').value = post.imageUrl; byId('post-excerpt').value = post.excerpt; byId('post-content').value = post.content; byId('post-status').value = post.status; byId('post-form').scrollIntoView({ behavior: 'smooth' }); } } if (remove && confirm('Delete this post?')) { const response = await fetch(`/api/admin/posts/${encodeURIComponent(remove.dataset.deletePost)}`, { method: 'DELETE' }); if (response.ok) { await loadPosts(); } } });
+        byId('search-input').addEventListener('input', render); byId('status-filter').addEventListener('change', render); byId('close-detail').addEventListener('click', closeDetails); byId('detail-modal').addEventListener('click', event => { if (event.target === byId('detail-modal')) closeDetails(); });
+        byId('save-detail').addEventListener('click', async () => { const item = applications.find(application => application.id === selectedId); if (!item) return; const status = byId('detail-status').value; if (apiMode) await fetch(`/api/applications/${encodeURIComponent(selectedId)}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }) }); item.status = status; if (!apiMode) save(); render(); closeDetails(); });
+        byId('delete-detail').addEventListener('click', async () => { if (!selectedId || !confirm('Delete this application?')) return; if (apiMode) await fetch(`/api/applications/${encodeURIComponent(selectedId)}`, { method: 'DELETE' }); applications = applications.filter(item => item.id !== selectedId); if (!apiMode) save(); render(); closeDetails(); });
+        byId('add-demo').addEventListener('click', () => { applications.unshift({ id: `APP-${Date.now().toString().slice(-6)}`, name: 'Adaeze Okafor', email: 'adaeze@example.com', phone: '08025000067', estate: 'Winners Estate', propertyType: 'Residential plot', paymentPlan: 'Installment plan', notes: 'Interested in an inspection this week.', status: 'New', submittedAt: new Date().toISOString() }); save(); render(); });
+        byId('export-btn').addEventListener('click', () => { const headings = ['ID', 'Name', 'Email', 'Phone', 'Estate', 'Property Type', 'Payment Plan', 'Status', 'Submitted']; const rows = applications.map(item => [item.id, item.name, item.email, item.phone, item.estate, item.propertyType, item.paymentPlan, item.status, item.submittedAt]); const csv = [headings, ...rows].map(row => row.map(value => `"${String(value || '').replace(/"/g, '""')}"`).join(',')).join('\n'); const link = document.createElement('a'); link.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); link.download = 'hog-applications.csv'; link.click(); URL.revokeObjectURL(link.href); });
+        byId('logout-btn').addEventListener('click', async () => { if (apiMode) await fetch('/api/auth/logout', { method: 'POST' }); window.location.href = apiMode ? '/admin-login.html' : 'admin-dashboard.html'; });
+        byId('post-clear').addEventListener('click', clearPostForm);
+        byId('post-form').addEventListener('submit', async event => { event.preventDefault(); const id = byId('post-id').value; const data = { title: byId('post-title').value, category: byId('post-category').value, imageUrl: byId('post-image').value, excerpt: byId('post-excerpt').value, content: byId('post-content').value, status: byId('post-status').value }; const response = await fetch(id ? `/api/admin/posts/${encodeURIComponent(id)}` : '/api/admin/posts', { method: id ? 'PATCH' : 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) }); const message = byId('post-message'); message.textContent = response.ok ? 'Post saved.' : (await response.json()).error || 'Could not save post.'; if (response.ok) { clearPostForm(); await loadPosts(); } });
+        if (apiMode) byId('add-demo').classList.add('hidden');
+        loadApplications(); loadPosts();
+    </script>
+</body>
+</html>

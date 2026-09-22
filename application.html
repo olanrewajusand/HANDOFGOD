@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Your Application - HAND OF GOD CONSTRUCTION COMPANY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script src="nav.js"></script>
+</head>
+<body class="text-gray-900 antialiased">
+    <header></header>
+    <main>
+        <section class="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style="background-image: url('images/NEWS & MEDIA.jpg');">
+            <div class="absolute inset-0 bg-[#082a1d]/90"></div>
+            <div class="relative max-w-7xl mx-auto text-center z-10">
+                <span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase">Your next chapter starts here</span>
+                <h1 class="font-serif text-4xl sm:text-6xl font-bold mt-3 mb-4">Start Your Application</h1>
+                <p class="text-gray-200 text-base sm:text-lg max-w-2xl mx-auto">Tell us what you are looking for and our property team will guide you through the next step.</p>
+            </div>
+        </section>
+
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid lg:grid-cols-[0.8fr_1.2fr] gap-10 items-start">
+                <aside class="bg-[#123f2d] text-white rounded-2xl p-8 lg:sticky lg:top-28">
+                    <span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase">A clear process</span>
+                    <h2 class="font-serif text-3xl font-bold mt-2 mb-6">Move from interest to ownership.</h2>
+                    <ol class="space-y-5 text-sm text-gray-200">
+                        <li class="flex gap-4"><span class="text-[#C29B38] font-serif text-xl">01</span><span>Choose an estate and property type that fits your plans.</span></li>
+                        <li class="flex gap-4"><span class="text-[#C29B38] font-serif text-xl">02</span><span>Share your details so our team can confirm availability.</span></li>
+                        <li class="flex gap-4"><span class="text-[#C29B38] font-serif text-xl">03</span><span>Receive guidance on inspection, documentation, and payment.</span></li>
+                    </ol>
+                    <a href="contact.html" class="inline-flex mt-8 text-[#C29B38] font-semibold hover:text-white">Need help first? Contact us</a>
+                </aside>
+
+                <div class="bg-white rounded-2xl border border-gray-200 shadow-xl p-7 sm:p-10">
+                    <div class="mb-8">
+                        <span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase">Property enquiry</span>
+                        <h2 class="font-serif text-3xl font-bold text-[#123f2d] mt-2">Tell us about your plans</h2>
+                        <p class="text-gray-600 mt-3">Complete the short form. This local preview confirms your request and directs you to our customer service team for the next step.</p>
+                    </div>
+                    <form id="subscription-form" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div><label for="application-name" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Full name</label><input id="application-name" name="full-name" type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d]" placeholder="Your full name"></div>
+                            <div><label for="application-email" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Email address</label><input id="application-email" name="email" type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d]" placeholder="you@example.com"></div>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div><label for="application-phone" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Phone number</label><input id="application-phone" name="phone" type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d]" placeholder="08025000067"></div>
+                            <div><label for="application-estate" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Preferred estate</label><select id="application-estate" name="estate" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d] bg-white"><option value="">Choose an estate</option><option value="Winners Estate">Winners Estate</option><option value="City of David">City of David</option><option value="New Jerusalem">New Jerusalem</option><option value="Eastern Mega City">Eastern Mega City</option><option value="City of Light">City of Light</option><option value="New Haven Estate">New Haven Estate</option><option value="Paradise Estate Emene">Paradise Estate Emene</option></select></div>
+                        </div>
+                        <div id="application-location-field" class="hidden">
+                            <label id="application-location-label" for="application-location" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Choose a location</label>
+                            <select id="application-location" name="estate-location" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d] bg-white">
+                                <option value="">Choose a location</option>
+                            </select>
+                        </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div><label for="application-type" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Property type</label><select id="application-type" name="property-type" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d] bg-white"><option value="">Choose a property type</option><option>Two Bed Semi-Detached</option><option>Three Bed Fully Detached</option><option>Four Bed Fully Detached</option></select></div>
+                            <div><label for="application-plan" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Payment plan</label><select id="application-plan" name="payment-plan" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d] bg-white"><option value="">Choose a payment plan</option><option>Outright payment</option><option>Installment plan</option><option>Mortgage / NHF</option></select></div>
+                        </div>
+                        <div><label for="application-notes" class="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">Notes</label><textarea id="application-notes" name="notes" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#123f2d]" placeholder="Tell us anything useful about your plans"></textarea></div>
+                        <button type="submit" class="w-full bg-[#C29B38] hover:bg-[#a9822d] text-white font-bold py-4 rounded-xl shadow-lg uppercase tracking-wider">Submit Application</button>
+                        <p id="subscription-status" class="hidden rounded-lg bg-blue-50 p-4 text-sm text-blue-800" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

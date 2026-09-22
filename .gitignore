@@ -1,0 +1,5 @@
+node_modules/
+.env
+hog.db
+hog.db-shm
+hog.db-wal

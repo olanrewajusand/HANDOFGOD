@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & Gallery - HAND OF GOD CONSTRUCTION COMPANY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <script src="nav.js"></script>
+</head>
+<body class="text-gray-900 antialiased">
+    <header class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 w-full"></header>
+    <main>
+        <section class="relative bg-cover bg-center text-white py-24 px-4 sm:px-6 lg:px-8" style="background-image: url('images/DSC_3451-optimized.jpg');">
+            <div class="absolute inset-0 bg-[#143D2A]/85"></div>
+            <div class="relative max-w-7xl mx-auto text-center z-10">
+                <span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase">Our work</span>
+                <h1 class="font-serif text-4xl sm:text-6xl font-bold mt-3 mb-4">Portfolio & Gallery</h1>
+                <p class="text-gray-200 text-base sm:text-lg max-w-2xl mx-auto">Explore the communities, homes, and infrastructure we are building across Nigeria.</p>
+            </div>
+        </section>
+
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-8">
+                <div><span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase">Selected projects</span><h2 class="font-serif text-3xl sm:text-4xl font-bold text-[#143D2A] mt-2">Built for real life</h2></div>
+                <div class="flex flex-wrap gap-2" aria-label="Gallery filters">
+                    <button class="gallery-filter bg-[#143D2A] text-white px-4 py-2 rounded-full text-xs font-semibold" data-filter="all">All</button>
+                    <button class="gallery-filter bg-gray-100 text-gray-700 hover:bg-[#C29B38] hover:text-white px-4 py-2 rounded-full text-xs font-semibold" data-filter="estates">Estates</button>
+                    <button class="gallery-filter bg-gray-100 text-gray-700 hover:bg-[#C29B38] hover:text-white px-4 py-2 rounded-full text-xs font-semibold" data-filter="construction">Construction</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <button class="gallery-item group text-left" data-category="estates" data-image="images/8dac5ffe-ef0d-40d3-9fb9-54480c246b52.jpg" data-title="Winners Estate"><img loading="lazy" src="images/8dac5ffe-ef0d-40d3-9fb9-54480c246b52.jpg" alt="Winners Estate" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">Winners Estate</span><span class="text-xs text-gray-500">Estate development</span></button>
+                <button class="gallery-item group text-left" data-category="construction" data-image="images/DSC_3477-optimized.jpg" data-title="Property showcase"><img src="images/DSC_3477-optimized.jpg" alt="Property showcase" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300" loading="lazy" width="1000" height="670"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">Property showcase</span><span class="text-xs text-gray-500">Residential construction</span></button>
+                <button class="gallery-item group text-left" data-category="estates" data-image="images/06872ea7-452d-4eed-a8a9-cefd6be388f8.jpg" data-title="City of David Estate"><img loading="lazy" src="images/06872ea7-452d-4eed-a8a9-cefd6be388f8.jpg" alt="City of David Estate" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">City of David Estate</span><span class="text-xs text-gray-500">Completed community</span></button>
+                <button class="gallery-item group text-left" data-category="estates" data-image="images/WhatsApp Image 2026-08-17 at 12.09.25 PM (1).jpeg" data-title="New Jerusalem City Estate"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.25 PM (1).jpeg" alt="New Jerusalem City Estate" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">New Jerusalem City Estate</span><span class="text-xs text-gray-500">Ongoing development</span></button>
+                <button class="gallery-item group text-left" data-category="construction" data-image="images/WhatsApp Image 2026-08-17 at 12.09.24 PM (1).jpeg" data-title="Modern housing project"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.24 PM (1).jpeg" alt="Modern housing project" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">Modern housing project</span><span class="text-xs text-gray-500">Construction work</span></button>
+                <button class="gallery-item group text-left" data-category="estates" data-image="images/WhatsApp Image 2026-08-17 at 12.09.25 PM (3).jpeg" data-title="City of Light Estate"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.25 PM (3).jpeg" alt="City of Light Estate" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">City of Light Estate</span><span class="text-xs text-gray-500">Residential plots</span></button>
+                <button class="gallery-item group text-left" data-category="estates" data-image="images/WhatsApp Image 2026-08-17 at 12.09.25 PM.jpeg" data-title="Paradise Estate"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.25 PM.jpeg" alt="Paradise Estate" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">Paradise Estate</span><span class="text-xs text-gray-500">Residential community</span></button>
+                <button class="gallery-item group text-left" data-category="construction" data-image="images/WhatsApp Image 2026-08-17 at 12.09.24 PM (2).jpeg" data-title="Infrastructure and access"><img loading="lazy" src="images/WhatsApp Image 2026-08-17 at 12.09.24 PM (2).jpeg" alt="Infrastructure and access" class="w-full h-64 object-cover rounded-2xl shadow-sm group-hover:scale-[1.02] transition duration-300"><span class="block mt-3 text-sm font-semibold text-[#143D2A]">Infrastructure and access</span><span class="text-xs text-gray-500">Development works</span></button>
+            </div>
+        </section>
+
+        <section class="bg-[#143D2A] text-white py-14 px-4 sm:px-6 lg:px-8"><div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-6"><div><span class="text-[#C29B38] text-xs font-bold tracking-widest uppercase">Start your journey</span><h2 class="font-serif text-3xl font-bold mt-2">Find your place in the story</h2></div><a href="own-property.html" class="bg-[#C29B38] hover:bg-[#b08b30] px-6 py-3 rounded-full font-semibold transition">Explore ownership</a></div></section>
+    </main>
+
+    <div id="gallery-modal" class="hidden fixed inset-0 z-[60] bg-black/80 p-4 items-center justify-center" role="dialog" aria-modal="true" aria-label="Gallery image viewer">
+        <div class="gallery-viewer relative max-w-5xl w-full">
+            <button id="gallery-close" class="absolute -top-12 right-0 text-white text-3xl" aria-label="Close image viewer">&times;</button>
+            <button id="gallery-prev" class="gallery-nav gallery-nav-prev" type="button" aria-label="Previous image">&#8592;</button>
+            <img loading="lazy" id="gallery-modal-image" src="" alt="" class="w-full max-h-[80vh] object-contain rounded-xl">
+            <button id="gallery-next" class="gallery-nav gallery-nav-next" type="button" aria-label="Next image">&#8594;</button>
+            <div class="gallery-caption"><p id="gallery-modal-title" class="text-white text-center font-semibold"></p><span id="gallery-modal-count"></span></div>
+        </div>
+    </div>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const galleryFilters = document.querySelectorAll('.gallery-filter');
+        const galleryModal = document.getElementById('gallery-modal');
+        const galleryModalImage = document.getElementById('gallery-modal-image');
+        const galleryModalTitle = document.getElementById('gallery-modal-title');
+        const galleryModalCount = document.getElementById('gallery-modal-count');
+        const galleryPrevious = document.getElementById('gallery-prev');
+        const galleryNext = document.getElementById('gallery-next');
+        let activeGalleryIndex = 0;
+        const getVisibleGalleryItems = () => [...galleryItems].filter(item => !item.classList.contains('hidden'));
+        const renderGalleryImage = item => { galleryModalImage.src = item.dataset.image; galleryModalImage.alt = item.dataset.title; galleryModalTitle.textContent = item.dataset.title; const visibleItems = getVisibleGalleryItems(); galleryModalCount.textContent = `${activeGalleryIndex + 1} / ${visibleItems.length}`; };
+        const moveGallery = direction => { const visibleItems = getVisibleGalleryItems(); if (!visibleItems.length) return; activeGalleryIndex = (activeGalleryIndex + direction + visibleItems.length) % visibleItems.length; renderGalleryImage(visibleItems[activeGalleryIndex]); };
+        const closeGallery = () => { galleryModal.classList.add('hidden'); galleryModal.classList.remove('flex'); document.body.style.overflow = ''; };
+        galleryFilters.forEach(filter => filter.addEventListener('click', () => { const selected = filter.dataset.filter; galleryItems.forEach(item => { item.classList.toggle('hidden', selected !== 'all' && item.dataset.category !== selected); }); galleryFilters.forEach(button => button.classList.toggle('bg-[#143D2A]', button === filter)); galleryFilters.forEach(button => button.classList.toggle('text-white', button === filter)); }));
+        galleryItems.forEach(item => item.addEventListener('click', () => { const visibleItems = getVisibleGalleryItems(); activeGalleryIndex = visibleItems.indexOf(item); renderGalleryImage(item); galleryModal.classList.remove('hidden'); galleryModal.classList.add('flex'); document.body.style.overflow = 'hidden'; }));
+        galleryPrevious.addEventListener('click', () => moveGallery(-1));
+        galleryNext.addEventListener('click', () => moveGallery(1));
+        document.getElementById('gallery-close').addEventListener('click', closeGallery);
+        galleryModal.addEventListener('click', event => { if (event.target === galleryModal) closeGallery(); });
+        document.addEventListener('keydown', event => { if (galleryModal.classList.contains('hidden')) return; if (event.key === 'Escape') closeGallery(); if (event.key === 'ArrowLeft') moveGallery(-1); if (event.key === 'ArrowRight') moveGallery(1); });
+    </script>
+</body>
+</html>
